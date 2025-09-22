@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Manager Inline Edit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🍳 My Recipe Manager</h1>
+  </header>
+
+  <section class="add-recipe-section">
+    <h2>Add New Recipe</h2>
+    <form id="recipeForm">
+      <input type="text" id="recipeName" placeholder="Recipe Name" required>
+      <input type="text" id="recipeIngredients" placeholder="Ingredients (comma separated)" required>
+      <input type="text" id="recipeSteps" placeholder="Steps (comma separated)" required>
+      <button type="submit">Add Recipe</button>
+    </form>
+  </section>
+
+  <section class="recipe-list-section">
+    <h2>Recipes</h2>
+    <div id="recipeList" class="recipe-list"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

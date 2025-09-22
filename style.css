@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: #fdf6f0;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background: #ff6f61;
+  color: #fff;
+  text-align: center;
+  padding: 25px 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+/* Form Section */
+.add-recipe-section {
+  padding: 25px;
+  max-width: 650px;
+  margin: 25px auto;
+  background: #fff0f5;
+  border-radius: 14px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.add-recipe-section input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.add-recipe-section button {
+  padding: 12px 22px;
+  background: #ff6f61;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Recipe List */
+.recipe-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 20px;
+}
+
+/* Recipe Card */
+.recipe-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  padding: 18px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+}
+
+.recipe-card h3 {
+  margin-top: 0;
+  color: #ff6f61;
+}
+
+.recipe-card ul {
+  padding-left: 20px;
+}
+
+/* Card Buttons */
+.delete-btn,
+.edit-btn,
+.save-btn,
+.cancel-btn {
+  margin: 5px 5px 0 0;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+}
+
+.delete-btn { background: #ff6f61; }
+.edit-btn { background: #4caf50; }
+.save-btn { background: #00798c; }
+.cancel-btn { background: #aaa; }
+
+.delete-btn:hover { background: #e0554d; }
+.edit-btn:hover { background: #388e3c; }
+.save-btn:hover { background: #005f6b; }
+.cancel-btn:hover { background: #888; }
+
+/* Inline Edit Inputs */
+.recipe-card input {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.recipe-card textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .recipe-list { grid-template-columns: 1fr; }
+}
